@@ -42,6 +42,60 @@ vi) Descendant Selector (div > p).
 
 ## Level 2 (Color System and Background)
 
+9) Background-color :- Sets the background color of an html element.
+
+10) Color System :- 
+
+Color Theory -> Red, Green and Blue are the foundational colors.
+Color Picker -> picks any color or copy any color.
+RGB Color Model -> Have three channels and value (0-255) -> rgb(r, g, b).
+Hex Color Model -> Have hexadecimal value #402ae9.
+Alpha Channel -> Used fot transparency levels rgb(100,101,102,0.5);
+
+11) Absolute Units :- Pixels (px) are fixed-size units, representing a dot on a computer screen.
+A pixel is the smallest unit of a digital image or display, often referred to as a "picture element." It represents a single point in a graphic and is the basic building block of digital images. Multiple pixels combine to form the images you see on screens, such as TVs, tablets, and computer monitors.
+
+12) Height and Width Property :- height: 40px, width: 40px;
+Can also use max-height, min-height, max-width and min-width.
+
+13) Background Image Property :-  Usage: Adds an image as a background to elements.
+ • Syntax: Defined using background-image: 
+url('path/to/image’);.
+ • Repetition: Control image repetition using 
+background-repeat.
+ • Positioning: Adjust image position using background
+position.
+ • Size Control: Manipulate image size using 
+background-size.
+ • Background-Attachment: Sets whether the 
+background image scrolls with the element or 
+remains fixed.
+ • Shorthand (color, image, repeat, attachment, 
+position
+
+14) Visibility Property :- Controls the visibility of elements without changing the layout.
+
+## Level 3 (Text Properties) 
+
+15) Text-Align Property :- Controls the horizontal alignment of text within an element.
+
+16) Text-Decoration Property :- Modifies the apperance of inline text. (none, underline, overline, line-through). Also has variety of style and color.
+
+17) Text-Transform Property :- Controls the capitalization of text.(uppercase, lowercase, none, etc).
+
+18) Line-Height :- Adjusts the amount of space above and below inline elements. Useful for controlling vertical spacing between lines of text.
+
+19) Font Property :- font-size, font-weight(100-900), font-style(Useful for highlighting),
+
+20) Font Family -> Defines which font should be used for text within an element(Fallback Mechanism).
+
+21) Icons using Fonts :- Use font awesome website for fonts.
+
+
+
+
+
+
 
 
 
