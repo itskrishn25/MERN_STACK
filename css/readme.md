@@ -71,7 +71,7 @@ background-size.
 background image scrolls with the element or 
 remains fixed.
  • Shorthand (color, image, repeat, attachment, 
-position
+position)
 
 14) Visibility Property :- Controls the visibility of elements without changing the layout.
 
@@ -90,6 +90,24 @@ position
 20) Font Family -> Defines which font should be used for text within an element(Fallback Mechanism).
 
 21) Icons using Fonts :- Use font awesome website for fonts.
+
+## Level 4 (Box Model)
+
+22) What is Box Model :- Central concept in CSS that outlines the design and layout of elements on the web page.
+Have four main components -> margin, padding, border, content.
+
+23) Padding Property :- The space b/w the border and the actual content. Shorthand -> padding: 10px 20px 30px 40px;
+
+24) Margin Property :- Sets the space around elements, separating them from others. Shorthand -> margin: 10px 20px 30px 40px;
+can be auto for central alignment.
+
+24) Border Property :-  Creates an outline around HTML elements.
+border: 2px solid black;
+
+Border-radius -> Used to create rounded corners for elements. border-radius: 10px 20px;
+
+Box-sizing -> border-box or content-box, in border-box, border is counted into content itself.
+
 
 
 
