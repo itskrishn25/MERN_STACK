@@ -101,12 +101,84 @@ Have four main components -> margin, padding, border, content.
 24) Margin Property :- Sets the space around elements, separating them from others. Shorthand -> margin: 10px 20px 30px 40px;
 can be auto for central alignment.
 
-24) Border Property :-  Creates an outline around HTML elements.
+25) Border Property :-  Creates an outline around HTML elements.
 border: 2px solid black;
 
 Border-radius -> Used to create rounded corners for elements. border-radius: 10px 20px;
 
 Box-sizing -> border-box or content-box, in border-box, border is counted into content itself.
+
+## Level 5 (Display and Position)
+
+26) Display Property :- 
+Block Elements -> Take up all horizontal space(div, h1, p)
+Inline Elements -> Just as wide as the content in the element(span, a, strong)
+
+display: block; // Change the type of element to block element.
+display: inline; // Change the type of element to inline element.
+display: inline-block; // Change the type of element to inline element but we can also set the height and width of element.
+display: none; // Remove the element from the page.
+
+27) Responsive Website :- 
+ 1. Adapts layout for different screen sizes
+ 2. Flexible layouts
+ 3. Optimizes images and assets
+ 4. Enhances user experience on mobile and desktop
+
+28) Relative Units :- 
+ 1. Percentage -> set the dimensions of element in percentage with respect to the parent element.
+ 2. em -> set the font-size of text in em with respect to the parent element.
+ 3. rem -> set the font-size of text in rem with respect to the root element.
+ 4. vw/vh ->  • Viewport Relative Units: Units based on viewport's width (vw) or height (vh) for 
+responsive design.
+ • Responsive Layouts: Essential for creating adaptive layouts; e.g., height: 100vh for 
+full-screen sections.
+ • Element Sizing: Useful for defining heights and widths that scale with the 
+viewport.
+
+29) Position Property :- 
+ • Static (default) : Elements follow the normal document flow. (top, right, 
+bottom, left, z-index would not work)
+ • Relative: Element's position adjusted from its normal position.
+ • Absolute: Positions element relative to the nearest positioned ancestor.
+ • Fixed: Element positioned relative to the viewport, does not move on scroll.
+
+Z-index -> Integer Values: Accepts integer values, including negative numbers.
+ • Higher Values: An element with a higher z-index value appears 
+above others.
+
+30) Semantic Tags :- 
+Semantic Tags
+ ● Meaningful: Describe content.
+ ● SEO: Good for search engines.
+ ● Accessibility: Useful for screen 
+readers.
+ ● Examples: <header>, <footer>, 
+<article>, <section>, <nav>.
+
+Non-Semantic Tags
+ ● Generic: No specific meaning.
+ ● For Styling: Used for layout.
+ ● No SEO: Not SEO-friendly.
+ ● Examples: <div>, <span>, <i>, 
+<b>.
+
+## Level 6 (Flex Box, Grid and Media Queries)
+
+31) Float Property :- 
+• Element Alignment: Allows elements to be aligned to the left or right 
+within their containing element. 
+• Values: Can take values like "left", "right", or "none" to determine the 
+floating direction. 
+• Old Layout Technique: Less commonly used with the advent of Flexbox.
+
+32) What is FlexBox? :-
+Flexbox is a one-dimensional layout method for arranging items in rows or columns. 
+Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
+
+
+
+
 
 
 
