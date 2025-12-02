@@ -176,6 +176,49 @@ floating direction.
 Flexbox is a one-dimensional layout method for arranging items in rows or columns. 
 Items flex (expand) to fill additional space or shrink to fit into smaller spaces.
 
+33) Flex Model :- 
+display: flex; horizontal-axis -> main axis and vertical axis -> cross axis
+
+34) Flexbox Direction :-  flex-direction is the property used to define the direction in a flex container.
+flex-direction: row, column, row-reverse, column-reverse
+
+35) Properties :- 
+i) justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly
+ii) flex-wrap: nowrap (default), wrap, wrap-reverse
+iii) align-items: This property is used to align the flex container's items along the cross-axis, which is perpendicular to the main axis 
+iv) align-content:  It is utilized to adjust the spacing between flex lines within a flex container,particularly when there is extra space along the cross axis.
+v) align-self: Allows individual flex items to override the container's align-items property, aligning 
+them differently along the cross-axis.
+vi) flex-shrink:  The "flex-shrink" property in CSS determines how much a flex item will shrink relative to other items in the flex container if there is insufficient space.
+vii) flex-grow:  The "flex-grow" property in CSS specifies how much a flex item will grow relative to other items in the flex container when additional space is available
+viii) order: The "order" property in CSS allows you to define the sequence in which flex items appear within the flex container, overriding their original order in the HTML.
+
+37) Grid :- 2D layout system for rows & columns.
+ • Activate with display: grid;.
+ • Children become grid items.
+ • Define structure with grid-template properties.
+ • Individual units called grid cells.
+
+38) Media Queries :- Tailor styles for specific device characteristics. Used for responsiveness.
+
+@media screen and (width: 250){
+    
+}
+
+@media screen and (min-width: 300){
+    
+}
+
+@media screen and (max-width: 300){
+    
+}
+
+@media screen and (min-width: 250) and (max-width: 300){
+    
+}
+
+
+
 
 
 

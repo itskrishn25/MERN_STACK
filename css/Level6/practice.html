@@ -5,30 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
-            width: 500px;
-            height: 110px;
-            border: 3px solid black;
+        .navbar{
+            display: flex;
+            justify-content: space-around;
         }
+        .items{
+            display: flex;
+            gap: 20px;
+        }
+        .imagecontainer{
+            height: 500px;
+            width: 500px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxer{
+            width: 900px;
+            height: 300px;
+            background-color: yellow;
+            display: flex;
+        }
+
         .box{
-            width: 100px;
-            height: 100px;
-            margin: 5px;
+            height: 200px;
+            width: 200px;
         }
         .box1{
             background-color: red;
-            float: right;
         }
         .box2{
+            background-color: green;
+        }
+        .box3{
             background-color: blue;
-            float: left;
+            flex-grow: 1;
+            flex-shrink: 4;
+        }
+
+        .four{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        @media screen and (max-width: 300px){
+            .four{
+                background-color: green;
+            }
+        }
+        @media screen and (min-width: 300px) and (max-width: 400px){
+            .four{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 400px){
+            .four{
+                background-color: blue;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        Name
+        <ul class="items">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="imagecontainer">
+        <img height="200px" width="200px" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="">
+    </div>
+
+    <div class="boxer">
         <div class="box box1"></div>
         <div class="box box2"></div>
+        <div class="box box3"></div>
     </div>
+
+    <div class="four"></div>
 </body>
 </html>
