@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f9;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* --- Progress Bar Container --- */
+#progress-container {
+    width: 100%;
+    height: 35px;
+    background-color: #e0e0e0;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    
+    /* Apply the bounce animation to the container */
+    animation: 
+        bounce-at-end 0.6s ease-out 1; /* Duration, timing, repetition */
+    animation-delay: 4s; /* Start the bounce 4s after the bar starts filling */
+}
+
+/* --- Progress Bar Filler --- */
+#progress-bar {
+    height: 100%;
+    width: 0%; /* Start at 0% */
+    background: linear-gradient(90deg, #4CAF50, #8BC34A); /* Gradient color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* --- CRUCIAL: The Filling Animation --- */
+    animation: 
+        fill-bar 4s ease-in-out forwards infinite; /* 4s duration, smooth timing, fill mode, infinite loop */
+}
+
+#progress-bar span {
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Show 100% text only when the animation is at its final state */
+#progress-bar:not([style*="width: 100%"]) span {
+    /* Since we're using keyframes, we can't easily target 100%, 
+       but we can rely on the timing of the animation */
+}
+
+/* --- 1. FILLING ANIMATION KEYFRAMES --- */
+@keyframes fill-bar {
+    0% { width: 0%; }
+    90% { width: 100%; } /* Stop slightly early to hold at 100% */
+    100% { width: 100%; }
+}
+
+/* --- 2. BOUNCE ANIMATION KEYFRAMES (Applied to the container) --- */
+@keyframes bounce-at-end {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); } /* Slight bounce/expansion */
+    100% { transform: scale(1); }
+}

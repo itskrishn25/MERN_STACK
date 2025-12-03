@@ -217,6 +217,48 @@ viii) order: The "order" property in CSS allows you to define the sequence in wh
     
 }
 
+## Level 7 ( Animation, Transition and Transform) 
+
+39) Pseudo classes :- Used to define special states of HTML elements.
+ • Syntax: selector:pseudo-class { styles }.
+ • Common examples: :hover, :active, :first-child.
+ • Target elements based on their position or user 
+action.
+Example : .btn:hover{}, .btn:active{};
+
+40) Transitions :- CSS transition is a property that enables smooth animation between 
+changes in CSS property values
+ • transition-property: Defines which CSS properties will transition.
+ • transition-duration: Sets how long the transition lasts.
+ • transition-timing-function: Controls the speed curve of the 
+transition.
+ • transition-delay: Specifies a delay before the transition starts
+
+41) CSS Transform :- Allows modification of an element's shape 
+and position.
+ • Can perform operations like rotate, scale, 
+and translate.
+ • Does not affect the layout of surrounding 
+elements.
+ • Used to create visual effects like 3D space 
+transformations.
+ • Implemented with functions like rotate(), 
+scale(), and translate().
+
+42) Animation :- animation-name: Specifies the name of the 
+@keyframes defined animation.
+ • animation-duration: Defines the total time the 
+animation takes to complete one cycle.
+ • animation-timing-function: Controls the pacing of the 
+animation (e.g., linear, ease-in).
+ • animation-delay: Sets a delay before the animation 
+starts, allowing for a pause before initiation.
+ • animation-iteration-count: Indicates the number of 
+times the animation should repeat.
+ • animation-direction: Specifies the direction of the 
+animation, allowing for reverse or alternate cycles.
+
+
 
 
 
